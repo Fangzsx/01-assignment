@@ -26,12 +26,12 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-//4
-//617
-//23
-//false
-//114
+// 4
+// 617
+// 23
+// false
 
+/*
 const numNeighbors = prompt('How many neighbour countries does your country have?');
 
 if(Number(numNeighbors) ===  1){
@@ -43,4 +43,18 @@ else if(Number(numNeighbors) > 1){
 
 else{
     console.log('No border!');
+}*/
+
+
+const sarahLanguage = 'english';
+const sarahPopulation = 50000000;
+const sarahIsland = false;
+
+if(language === sarahLanguage && population <= sarahPopulation && isIsland === sarahIsland){
+    console.log('You should live in ' + country);
 }
+else{
+    console.log(country + ' does not meet your criteria.')
+}
+
+sw
