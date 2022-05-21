@@ -1,3 +1,4 @@
+/*
 const country = 'Philippines';
 const continent = 'South East Asia';
 let population = 112321181;
@@ -31,7 +32,7 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 // 23
 // false
 
-/*
+/!*
 const numNeighbors = prompt('How many neighbour countries does your country have?');
 
 if(Number(numNeighbors) ===  1){
@@ -43,7 +44,7 @@ else if(Number(numNeighbors) > 1){
 
 else{
     console.log('No border!');
-}*/
+}*!/
 
 
 const sarahLanguage = 'english';
@@ -81,3 +82,63 @@ let average;
 population > 33000000 ? average = 'above' : average = 'below';
 
 console.log(country + '\'s ' + 'population is ' + average +' average');
+*/
+
+function describeCountry(country, population, capitalCity){
+    return `${country} has ${population} and its capital city is ${capitalCity}`;
+}
+
+const description1 = describeCountry('Philippines1', 112, 'Manila1');
+const description2 = describeCountry('Philippines1', 112, 'Manila2');
+const description3 = describeCountry('Philippines1', 112, 'Manila3');
+
+console.log(description1);
+console.log(description2);
+console.log(description3);
+
+function percentageOfWorld1(population){
+    return population / 7900 * 100;
+}
+
+const ph1Percentage = percentageOfWorld1(112);
+const ph2Percentage = percentageOfWorld1(212);
+const ph3Percentage = percentageOfWorld1(312);
+
+console.log(ph1Percentage);
+console.log(ph2Percentage);
+console.log(ph3Percentage);
+
+const percentageOfWorld2 = function(population){
+    return population / 7900 * 100;
+}
+
+const ph4Percentage = percentageOfWorld2(112);
+const ph5Percentage = percentageOfWorld2(212);
+const ph6Percentage = percentageOfWorld2(312);
+
+console.log(ph4Percentage);
+console.log(ph5Percentage);
+console.log(ph6Percentage);
+
+const percentageOfWorld3 = population => Number(population / 7900 * 100);
+
+const ph7Percentage = percentageOfWorld3(112);
+const ph8Percentage = percentageOfWorld3(212);
+const ph9Percentage = percentageOfWorld3(312);
+
+console.log(ph7Percentage);
+console.log(ph8Percentage);
+console.log(ph9Percentage);
+
+const describePopulation = (country, population) => {
+    const percentage = percentageOfWorld3(population);
+    return `${country} has ${population} million people, which is about ${percentage} % of the world. `;
+}
+
+const descriptionPH = describePopulation('Philippines', 112);
+console.log(descriptionPH);
+
+
+
+
+
