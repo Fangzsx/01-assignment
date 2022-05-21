@@ -1,8 +1,8 @@
-let country = 'Philippines';
-let continent = 'South East Asia';
+const country = 'Philippines';
+const continent = 'South East Asia';
 let population = 112321181;
-let isIsland = true;
-let language;
+const isIsland = true;
+const language = 'Filipino'
 
 console.log(country);
 console.log(continent);
