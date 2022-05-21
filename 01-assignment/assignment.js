@@ -9,8 +9,16 @@ let description = country +  ' is in ' + continent + ', and its ' + population +
 
 console.log(country);
 console.log(continent);
-console.log(population + 1);
 console.log(halfPopulation);
 console.log(isIsland);
 console.log(language);
 console.log(description);
+
+if(population > 33000000){
+    console.log(country + '\'s' + ' population is above average.');
+}else{
+    console.log(country + '\'s' + 'population is below average.');
+}
+
+
+
