@@ -26,9 +26,21 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-
 //4
 //617
 //23
 //false
 //114
+
+const numNeighbors = prompt('How many neighbour countries does your country have?');
+
+if(Number(numNeighbors) ===  1){
+    console.log('Only 1 border!');
+}
+else if(Number(numNeighbors) > 1){
+    console.log('More than 1 border!');
+}
+
+else{
+    console.log('No border!');
+}
