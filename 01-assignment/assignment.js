@@ -2,7 +2,7 @@ const country = 'Philippines';
 const continent = 'South East Asia';
 let population = 112321181;
 const isIsland = true;
-const language = 'Filipino'
+const language = 'filipino';
 let halfPopulation = population / 2;
 let description = country +  ' is in ' + continent + ', and its ' + population + ' people speak ' + language;
 
@@ -57,4 +57,24 @@ else{
     console.log(country + ' does not meet your criteria.')
 }
 
-sw
+switch (language){
+    case 'chinese':
+    case 'mandarin' :
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language');
+        break;
+}
+
+population > 33000000 ? console.log(country + '\'s ' + 'population is above average. ')
+    : console.log(country + '\'s ' + 'population is below average. ');
