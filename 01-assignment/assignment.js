@@ -76,5 +76,8 @@ switch (language){
         break;
 }
 
-population > 33000000 ? console.log(country + '\'s ' + 'population is above average. ')
-    : console.log(country + '\'s ' + 'population is below average. ');
+let average;
+
+population > 33000000 ? average = 'above' : average = 'below';
+
+console.log(country + '\'s ' + 'population is ' + average +' average');
