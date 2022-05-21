@@ -20,5 +20,15 @@ if(population > 33000000){
     console.log(country + '\'s' + 'population is below average.');
 }
 
+console.log('9' - '5');
+console.log('19' - '13' + '17');
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2);
 
 
+//4
+//617
+//23
+//false
+//114
