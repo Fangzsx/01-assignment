@@ -130,6 +130,7 @@ console.log(ph7Percentage);
 console.log(ph8Percentage);
 console.log(ph9Percentage);
 
+
 const describePopulation = (country, population) => {
     const percentage = percentageOfWorld3(population);
     return `${country} has ${population} million people, which is about ${percentage} % of the world. `;
@@ -137,6 +138,37 @@ const describePopulation = (country, population) => {
 
 const descriptionPH = describePopulation('Philippines', 112);
 console.log(descriptionPH);
+
+const populations = [33, 45, 112, 56];
+
+if(populations.length === 4){
+    console.log(populations);
+}
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])];
+
+console.log(percentages);
+
+
+const neighbours = ['indonesia', 'sabah', 'japan'];
+
+console.log(neighbours);
+neighbours.push('utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if(!neighbours.includes('germany')){
+    console.log('Probably not a central european country');
+}
+
+neighbours[2] = 'republic of japan';
+console.log(neighbours);
+
 
 
 
