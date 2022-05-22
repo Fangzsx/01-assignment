@@ -169,6 +169,16 @@ if(!neighbours.includes('germany')){
 neighbours[2] = 'republic of japan';
 console.log(neighbours);
 
+const myCountry = {
+    country : 'Philippines',
+    capital : 'Manila',
+    language: 'Filipino',
+    population : 112,
+    neighbour : ['Japan', 'Indonesia', 'China']
+}
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
 
 
 
