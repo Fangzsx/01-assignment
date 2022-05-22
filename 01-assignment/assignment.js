@@ -178,7 +178,33 @@ const myCountry = {
 }
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}`);
+myCountry.population += 2;
 
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+
+console.log(myCountry.population);
+
+
+const jonas = {
+    hasDriversLicense : true,
+    birthYear : 1991,
+    job : 'teacher',
+    calcAge : function(){
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    printSummary : function(){
+        this.hasDriversLicense
+            ? console.log(`Jonas is a ${this.age} years old ${this.job}, and he has a driver's license.`)
+            : console.log(`Jonas is a ${this.age} years old ${this.job}, and he has no driver's license.`);
+    }
+}
+
+jonas.calcAge();
+jonas.printSummary();
 
 
 
